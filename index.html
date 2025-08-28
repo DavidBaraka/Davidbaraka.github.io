@@ -12,10 +12,23 @@
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden; /* removes scroll */
+      }
+      body {
+        user-select: none; /* disables text selection */
+        -webkit-user-select: none;
+        -ms-user-select: none;
+      }
+    </style>
   </head>
 
-  <body class="dark:bg-zinc-950 bg-white text-gray-100 flex items-center justify-center min-h-screen">
-    <div class="text-center px-6">
+  <body class="dark:bg-zinc-950 bg-white text-gray-100 flex items-center justify-center h-screen">
+    <div class="text-center">
       <h1 class="text-5xl gothic font-bold">𝕯𝖆𝖛𝖎𝖉 𝕭𝖆𝖗𝖆𝖐𝖆</h1>
       <a href="mailto:hello@davidbaraka.com" class="mt-6 inline-block text-3xl hover:scale-110 transition-transform">
         ✉️
